@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="side-column">
+            <img src="car.jpg" alt="">
+            <p style="position: absolute; background-color: rgb(255,255 ,255, 0.8); bottom: 1rem; padding: 0.1rem; font-size: 0.75rem; border-radius: 0.3rem; padding: 0.2rem 1rem;">Photo by <a href="https://unsplash.com/@introspectivedsgn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Erik Mclean</a> on <a href="https://unsplash.com/s/photos/car?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+        </div>
+        <div class="main-column">
+            <div class="container">
+                <h1>Power Shift</h1>
+                <p><strong>This is not a real service.</strong> Time to get out on the open road. Get the feeling of absolute freedom behind the wheel, in your favourite car. <strong>Sign Up Now!</strong></p>
+                <p>Drop a <strong style="color: darkred;">gear</strong> and <strong style="color: darkred;">dissapear</strong>.</p>
+            </div>
+            <div class="container2">
+                <strong>Get Started!</strong>
+                <form id="form1">
+                    <label for="fname">First name:</label>
+                    <input type="text" name="fname" required>
+
+                    <label for="lname">Last name:</label>
+                    <input type="text" name="lname" required>
+                    
+                    <label for="password">Password:</label>
+                    <input id="password1" type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" onkeyup="check();" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" required>
+                    
+                    <label for="pnumber">Phone number:</label>
+                    <input type="text" name="pnumber" required>
+
+                    <label for="cpassword">Confirm Password:</label>
+                    <input id="cpassword1" type="password" name="cpassword" onkeyup="check();" required>
+                    
+                </form>
+                <div style="font-size: 0.7rem; color: red;" id="match"></div>
+            </div>
+            <div class="container3">
+                <button type="submit" form="form1">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="index.js" defer></script>
+</body>
+</html>
